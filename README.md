@@ -14,7 +14,7 @@ The repository contains packages in various forms:
 
 Files in this repository originate from:
 
-- Disk images of historical publications such as **COMAL-Today**
+- Disk images of historical publications such as **COMAL-Today**, **DUTCH COMAL USERS GROUP**
 - Precompiled `.seq` files found on such disks
 - Machine code extracted via monitor tools in COMAL80 and then disassembled
 - ACME-compatible source files adapted or rewritten from original listings
@@ -37,8 +37,15 @@ This project includes Python tools to convert ACME source files into `.prg` and 
 
 ### Building Packages
 
-In VS Code execute the aplicable task from the menu.
-Otherwise use the following command depending on your OS:
+- In Visual Studio Code:
+
+Open the project in VS Code and execute the defined task from the menu:
+Terminal → Run Task → Build COMAL80 Package
+(if a tasks.json task is configured)
+
+- Alternatively via command line:
+
+Use the appropriate command depending on your operating system:
 
 ```bash
 # Linux/macOS

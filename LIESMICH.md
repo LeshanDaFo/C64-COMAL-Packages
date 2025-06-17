@@ -14,8 +14,8 @@ Die Pakete liegen in unterschiedlichen Formen vor:
 
 Die Ursprungsquellen umfassen:
 
-- Disketten-Images aus historischen COMAL-Publikationen (z. B. **COMAL-Today**)
-- Fertige `.seq`-Dateien auf C64-Disketten
+- Disketten-Images aus historischen COMAL-Publikationen (z. B. **COMAL-Today**,**DUTCH COMAL USERS GROUP**)
+- Fertige `.seq`-Dateien von solchen Disketten
 - Maschinencode, der in COMAL80 geladen und mit Monitorprogrammen abgespeichert wurde
 - Bereits vorhandene Quellcodes, angepasst an den ACME-Assembler
 
@@ -37,7 +37,14 @@ Das Projekt enthält Python-Skripte zur Umwandlung von Quellcode in COMAL-kompat
 
 ### Paketerzeugung
 
-Je nach Betriebssystem:
+- In Visual Studio Code:
+
+Öffne das Projekt in VS Code und führe die definierte Task über das Menü aus:
+Terminal → Run Task → Build COMAL80 Package (sofern eine Task in tasks.json definiert ist).
+
+- Alternativ über die Kommandozeile:
+
+Verwende je nach Betriebssystem den passenden Befehl:
 
 ```bash
 # Linux/macOS
@@ -52,21 +59,6 @@ Erzeugte Dateien:
 - `build/prg/DEIN.PACKAGE.prg`: Ausführbares PRG
 - `build/seq/DEIN.PACKAGE.seq`: In COMAL80 per `LINK "DEIN.PACKAGE"` ladbar
 
-## Verzeichnisstruktur
-
-```
-/
-├── src/                 → Quelltexte (.asm)
-├── build/
-│   ├── prg/             → Kompilierte PRG-Dateien
-│   └── seq/             → COMAL-kompatible SEQ-Dateien
-├── bin/
-│   ├── win/             → ACME für Windows
-│   ├── mac/             → ACME für macOS
-│   └── linux/           → ACME für Linux
-├── make_package.py      → Python-Skript zur Paketerzeugung
-└── LIESMICH.md
-```
 
 ## Erweiterbarkeit
 
