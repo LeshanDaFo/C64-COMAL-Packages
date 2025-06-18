@@ -7,7 +7,11 @@
 ; 
 ; 1/29/85
 ; 
-; from CMAL-Disk 'Pack2'
+; ------------------------
+; from Disk "2.0 Packages"
+; adjust the source, so it can be assembled with ACME
+; Claus Schlereth 2025-06-18
+; ------------------------
 start   =   $8009
 
     !source "c64symb.asm"
