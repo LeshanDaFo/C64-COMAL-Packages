@@ -58,7 +58,7 @@ def main():
 
     root_dir = os.getcwd()
     build_dir = os.path.join(root_dir, "build")
-    prg_dir = os.path.join(build_dir, "prg")
+    bin_dir = os.path.join(build_dir, "bin")
     seq_dir = os.path.join(build_dir, "seq")
 
     # Plattformabhängige Auswahl der ACME-Binärdatei
@@ -85,24 +85,24 @@ def main():
         sys.exit(1)
 
     base_name = os.path.splitext(os.path.basename(input_file))[0].replace("_", ".")
-    output_prg = os.path.join(prg_dir, f"{base_name}.prg")
+    output_bin = os.path.join(bin_dir, f"{base_name}.bin")
     output_seq = os.path.join(seq_dir, f"{base_name}.seq")
 
-    os.makedirs(prg_dir, exist_ok=True)
+    os.makedirs(bin_dir, exist_ok=True)
     os.makedirs(seq_dir, exist_ok=True)
 
-    print(t("building", source_path, output_prg))
+    print(t("building", source_path, output_bin))
 
     try:
-        subprocess.run([acme_path, "-f", "cbm", "-o", output_prg, source_path], check=True)
-        print(t("build_success", output_prg))
+        subprocess.run([acme_path, "-f", "cbm", "-o", output_bin, source_path], check=True)
+        print(t("build_success", output_bin))
     except subprocess.CalledProcessError:
         print(t("build_error"))
         sys.exit(1)
 
-    print(t("running_hex2mos", output_prg))
+    print(t("running_hex2mos", output_bin))
 
-    cmd = ["python3", "hex2mos.py", output_prg, output_seq]
+    cmd = ["python3", "hex2mos.py", output_bin, output_seq]
     if option == "--overwrite":
         cmd.append(option)
 

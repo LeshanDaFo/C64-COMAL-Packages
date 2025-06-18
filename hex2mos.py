@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-#  hex2mos.py – Wandelt ein .prg-File in eine COMAL-kompatible .seq-Datei im MOS-Technik-Format
+#  hex2mos.py – Wandelt ein .bin-File in eine COMAL-kompatible .seq-Datei im MOS-Technik-Format
 #
 #  Copyright (c) 2025 Claus Schlereth
 #
