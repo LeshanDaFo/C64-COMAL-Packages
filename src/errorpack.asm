@@ -61,7 +61,7 @@ OWNPAGE = DEFPAG+ROMMED;
     !pet "overflow"
 .msg3    !by 3
     !by .msg4-*-1
-    !pet "you are a hero";division by zero"
+    !pet "division by zero"
 .msg4    !by 4
     !by .msg5-*-1
     !pet "substring error"

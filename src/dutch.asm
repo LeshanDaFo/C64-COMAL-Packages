@@ -60,177 +60,437 @@
 errmsg_dutch
 ; these are the Dutch error messages
     !word errmsg2_dutch
-    !pet $00,$0E,"fout in report"
-    !pet $01,$10,"fout in argument"
-    !pet $02,$08,"overflow"
-    !pet $03,$0F,"deling door nul"
-    !pet $04,$0E,"substring-fout"
-    !pet $05,$14,"waarde buiten bereik"
-    !pet $06,$08,"step = 0"
-    !pet $07,$1B,"niet-toegestane grenswaarde"
-    !pet $08,$14,"fout in using-string"
-
-    !pet $0A,$13,"index buiten bereik"
-    !pet $0B,$18,"niet-toegestane filenaam"
-
-    !pet $0D,$0B,"verify-fout"
-    !pet $0E,$12,"programma te groot"
-    !pet $0F,$0F,"geen comal-kode"
-    !pet $10,$14,"geen comal-programma"
-    !pet $11,$22,"programma voor andere comal-versie"
-    !pet $12,$17,"onbekend file-attribuut"
-
-    !pet $1E,$13,"foutief kleurnummer"
-    !pet $1F,$14,"foutieve grenswaarde"
-    !pet $20,$16,"foutief tekeningnummer"
-    !pet $21,$1C,"tekening-lengte moet 64 zijn"
-    !pet $22,$15,"foutief sprite-nummer"
-    !pet $23,$12,"foutief stemnummer"
-    !pet $24,$0C,"fout in noot"
-
-    !pet $33,$0C,"systeem-fout"
-    !pet $34,$17,"geheugenruimte te klein"
-    !pet $35,$1E,"foutieve dimensie in parameter"
-    !pet $36,$1D,"parameter moet een array zijn"
-    !pet $37,$11,"te weinig indices"
-    !pet $38,$18,"toekenning niet mogelijk"
-    !pet $39,$14,"niet geimplementeerd"
-    !pet $3A,$13,"'con' niet mogelijk"
-    !pet $3B,$16,"programma is gewijzigd"
-    !pet $3C,$0F,"te veel indices"
-    !pet $3D,$1A,"return-statement ontbreekt"
-    !pet $3E,$0E,"geen variabele"
-
-    !pet $43,$24,"par-lijst verschilt cq niet 'closed'"
-    !pet $44,$1D,"geen closed proc/func in file"
-    !pet $45,$14,"te weinig parameters"
-    !pet $46,$12,"foutief index-type"
-    !pet $47,$21,"parameter moet een variabele zijn"
-    !pet $48,$16,"foutief parameter-type"
-    !pet $49,$0C,"non-ram load"
-    !pet $4A,$1C,"checksum-fout in object-file"
-    !pet $4B,$1E,"geheugendeel niet toegankelijk"
-    !pet $4C,$11,"te veel libraries"
-    !pet $4D,$10,"geen object-file"
-    !pet $4E,$22,"geen passende when-waarde gevonden"
-    !pet $4F,$12,"te veel parameters"
-
-    !pet $65,$0B,"syntax-fout"
-    !pet $66,$0D,"verkeerd type"
-    !pet $67,$23,"statement te lang of te ingewikkeld"
-    !pet $68,$27,"alleen als statement, niet als commando"
-
-    !pet $6A,$17,"regelnummers uit 1-9999"
-
-    !pet $6C,$16,"proc/func bestaat niet"
-    !pet $6D,$1D,"hier geen structuur-statement"
-    !pet $6E,$0E,"geen statement"
-    !pet $6F,$1A,"regelnummers buiten bereik"
-    !pet $70,$13,"programma beveiligd"
-    !pet $71,$0D,"onjuist teken"
-    !pet $72,$11,"fout in konstante"
-    !pet $73,$17,"fout in exponent-waarde"
-
-    !pet $C8,$0B,"eod gelezen"
-    !pet $C9,$0B,"eof gelezen"
-    !pet $CA,$0F,"file is al open"
-    !pet $CB,$0E,"file niet open"
-    !pet $CC,$10,"geen invoer-file"
-    !pet $CD,$11,"geen uitvoer-file"
-    !pet $CE,$1C,"numerieke konstante verwacht"
-    !pet $CF,$10,"geen random-file"
-    !pet $D0,$19,"eenheid niet toegankelijk"
-    !pet $D1,$19,"maximum aantal files open"
-    !pet $D2,$09,"read-fout"
-    !pet $D3,$0A,"write-fout"
-    !pet $D4,$0C,"te kort blok"
-    !pet $D5,$0C,"te lang blok"
-    !pet $D6,$0D,"checksum-fout"
-    !pet $D7,$19,"logisch einde van de tape"
-    !pet $D8,$11,"file bestaat niet"
-    !pet $D9,$11,"onbekende eenheid"
-    !pet $DA,$18,"operatie niet toegestaan"
-    !pet $DB,$0E,"i/o afgebroken"
-
-    !pet $E6,$08,$0D,"end op "
-    !pet $E7,$09,$0D,"stop in "
-    !pet $E8,$0E," bytes vrij ",$0D,$0D
-    !pet $E9,$04,"fout"
-
-    !pet $F2,$03,"in " 
-    !pet $F3,$11,"prog  data  vrij",$0D
-    !pet $F4,$11,"programma-stop in"
-    !pet $F5,$0E,"aangeroepen in"
-    !pet $F6,$06,"binnen"
-
-    !by $FF
-
+.msg0    !by 0
+    !by .msg1-*-1
+    !pet "fout in report"
+.msg1    !by 1
+    !by .msg2-*-1
+    !pet "fout in argument"
+.msg2    !by 2
+    !by .msg3-*-1
+    !pet "overflow"
+.msg3    !by 3
+    !by .msg4-*-1
+    !pet "deling door nul"
+.msg4    !by 4
+    !by .msg5-*-1
+    !pet "substring-fout"
+.msg5    !by 5
+    !by .msg6-*-1
+    !pet "waarde buiten bereik"
+.msg6    !by 6
+    !by .msg7-*-1
+    !pet "step = 0"
+.msg7    !by 7
+    !by .msg8-*-1
+    !pet "niet-toegestane grenswaarde"
+.msg8    !by 8
+    !by .msg10-*-1
+    !pet "fout in using-string"
+;
+.msg10    !by 10
+    !by .msg11-*-1
+    !pet "index buiten bereik"
+.msg11    !by 11
+    !by .msg13-*-1
+    !pet "niet-toegestane filenaam"
+;
+.msg13    !by 13
+    !by .msg14-*-1
+    !pet "verify-fout"
+.msg14    !by 14
+    !by .msg15-*-1
+    !pet "programma te groot"
+.msg15    !by 15
+    !by .msg16-*-1
+    !pet "geen comal-kode"
+.msg16    !by 16
+    !by .msg17-*-1
+    !pet "geen comal-programma"
+.msg17    !by 17
+    !by .msg18-*-1
+    !pet "programma voor andere comal-versie"
+.msg18    !by 18
+    !by .msg30-*-1
+    !pet "onbekend file-attribuut"
+;
+;
+;
+.msg30    !by 30
+    !by .msg31-*-1
+    !pet "foutief kleurnummer"
+.msg31    !by 31
+    !by .msg32-*-1
+    !pet "foutieve grenswaarde"
+.msg32    !by 32
+    !by .msg33-*-1
+    !pet "foutief tekeningnummer"
+.msg33    !by 33
+    !by .msg34-*-1
+    !pet "tekening-lengte moet 64 zijn"
+.msg34    !by 34
+    !by .msg35-*-1
+    !pet "foutief sprite-nummer"
+.msg35    !by 35
+    !by .msg36-*-1
+    !pet "foutief stemnummer"
+.msg36    !by 36
+    !by .msg51-*-1
+    !pet "fout in noot"
+;
+;
+;
+.msg51    !by 51
+    !by .msg52-*-1
+    !pet "systeem-fout"
+.msg52    !by 52
+    !by .msg53-*-1
+    !pet "geheugenruimte te klein"
+.msg53    !by 53
+    !by .msg54-*-1
+    !pet "foutieve dimensie in parameter"
+.msg54    !by 54
+    !by .msg55-*-1
+    !pet "parameter moet een array zijn"
+.msg55    !by 55
+    !by .msg56-*-1
+    !pet "te weinig indices"
+.msg56    !by 56
+    !by .msg57-*-1
+    !pet "toekenning niet mogelijk"
+.msg57    !by 57
+    !by .msg58-*-1
+    !pet "niet geimplementeerd"
+.msg58    !by 58
+    !by .msg59-*-1
+    !pet "'con' niet mogelijk"
+.msg59    !by 59
+    !by .msg60-*-1
+    !pet "programma is gewijzigd"
+.msg60    !by 60
+    !by .msg61-*-1
+    !pet "te veel indices"
+.msg61    !by 61
+    !by .msg62-*-1
+    !pet "return-statement ontbreekt"
+.msg62    !by 62
+    !by .msg67-*-1
+    !pet "geen variabele"
+;
+.msg67    !by 67
+    !by .msg68-*-1
+    !pet "par-lijst verschilt cq niet 'closed'"
+.msg68    !by 68
+    !by .msg69-*-1
+    !pet "geen closed proc/func in file"
+.msg69    !by 69
+    !by .msg70-*-1
+    !pet "te weinig parameters"
+.msg70    !by 70
+    !by .msg71-*-1
+    !pet "foutief index-type"
+.msg71    !by 71
+    !by .msg72-*-1
+    !pet "parameter moet een variabele zijn"
+.msg72    !by 72
+    !by .msg73-*-1
+    !pet "foutief parameter-type"
+.msg73    !by 73
+    !by .msg74-*-1
+    !pet "non-ram load"
+.msg74    !by 74
+    !by .msg75-*-1
+    !pet "checksum-fout in object-file"
+.msg75    !by 75
+    !by .msg76-*-1
+    !pet "geheugendeel niet toegankelijk"
+.msg76    !by 76
+    !by .msg77-*-1
+    !pet "te veel libraries"
+.msg77    !by 77
+    !by .msg78-*-1
+    !pet "geen object-file"
+.msg78    !by 78
+    !by .msg79-*-1
+    !pet "geen passende when-waarde gevonden"
+.msg79    !by 79
+    !by .msg101-*-1
+    !pet "te veel parameters"
+;
+;
+;
+.msg101    !by 101
+    !by .msg102-*-1
+    !pet "syntax-fout"
+.msg102    !by 102
+    !by .msg103-*-1
+    !pet "verkeerd type"
+.msg103    !by 103
+    !by .msg104-*-1
+    !pet "statement te lang of te ingewikkeld"
+.msg104    !by 104
+    !by .msg106-*-1
+    !pet "alleen als statement, niet als commando"
+;
+.msg106    !by 106
+    !by .msg108-*-1
+    !pet "regelnummers uit 1-9999"
+;
+.msg108    !by 108
+    !by .msg109-*-1
+    !pet "proc/func bestaat niet"
+.msg109    !by 109
+    !by .msg110-*-1
+    !pet "hier geen structuur-statement"
+.msg110    !by 110
+    !by .msg111-*-1
+    !pet "geen statement"
+.msg111    !by 111
+    !by .msg112-*-1
+    !pet "regelnummers buiten bereik"
+.msg112    !by 112
+    !by .msg113-*-1
+    !pet "programma beveiligd"
+.msg113    !by 113
+    !by .msg114-*-1
+    !pet "onjuist teken"
+.msg114    !by 114
+    !by .msg115-*-1
+    !pet "fout in konstante"
+.msg115    !by 115
+    !by .msg200-*-1
+    !pet "fout in exponent-waarde"
+;
+;
+;
+.msg200    !by 200
+    !by .msg201-*-1
+    !pet "eod gelezen"
+.msg201    !by 201
+    !by .msg202-*-1
+    !pet "eof gelezen"
+.msg202    !by 202
+    !by .msg203-*-1
+    !pet "file is al open"
+.msg203    !by 203
+    !by .msg204-*-1
+    !pet "file niet open"
+.msg204    !by 204
+    !by .msg205-*-1
+    !pet "geen invoer-file"
+.msg205    !by 205
+    !by .msg206-*-1
+    !pet "geen uitvoer-file"
+.msg206    !by 206
+    !by .msg207-*-1
+    !pet "numerieke konstante verwacht"
+.msg207    !by 207
+    !by .msg208-*-1
+    !pet "geen random-file"
+.msg208    !by 208
+    !by .msg209-*-1
+    !pet "eenheid niet toegankelijk"
+.msg209    !by 209
+    !by .msg210-*-1
+    !pet "maximum aantal files open"
+.msg210    !by 210
+    !by .msg211-*-1
+    !pet "read-fout"
+.msg211    !by 211
+    !by .msg212-*-1
+    !pet "write-fout"
+.msg212    !by 212
+    !by .msg213-*-1
+    !pet "te kort blok"
+.msg213    !by 213
+    !by .msg214-*-1
+    !pet "te lang blok"
+.msg214    !by 214
+    !by .msg215-*-1
+    !pet "checksum-fout"
+.msg215    !by 215
+    !by .msg216-*-1
+    !pet "logisch einde van de tape"
+.msg216    !by 216
+    !by .msg217-*-1
+    !pet "file bestaat niet"
+.msg217    !by 217
+    !by .msg218-*-1
+    !pet "onbekende eenheid"
+.msg218    !by 218
+    !by .msg219-*-1
+    !pet "operatie niet toegestaan"
+.msg219    !by 219
+    !by .msg230-*-1
+    !pet "i/o afgebroken"
+;
+;
+;
+.msg230    !by 230
+    !by .msg231-*-1
+    !pet 13,"end op "
+.msg231    !by 231
+    !by .msg232-*-1
+    !pet 13,"stop in "
+.msg232    !by 232
+    !by .msg233-*-1
+    !pet " bytes vrij ",13,13
+.msg233    !by 233
+    !by .msg242-*-1
+    !pet "fout"
+;
+;
+;
+.msg242    !by 242
+    !by .msg243-*-1
+    !pet "in "
+.msg243    !by 243
+    !by .msg244-*-1
+    !pet "prog  data  vrij",13
+.msg244    !by 244
+    !by .msg245-*-1
+    !pet "programma-stop in"
+.msg245    !by 245
+    !by .msg246-*-1
+    !pet "aangeroepen in"
+.msg246    !by 246
+    !by .msg255-*-1
+    !pet "binnen"
+;
+;
+.msg255    !by 255 ;marker for set 1 end ???
+;
+;
 errmsg2_dutch
-    !by $01,$F9,$01,$FA
-    !pet $06,$61," of ",$5F
-    !pet $0E,"label onbekend"
-    !pet $17,"naam reeds gedefinieerd"
-    !pet $0A,"geen label"
-    !pet $1B,"string niet gedimensioneerd"
-    !pet $0C,"geen package"
-    !pet $0B,"uitdrukking"
-    !pet $09,"variabele"
-    !pet $07,"operand"
-    !pet $0E,"variabele-naam"
-    !pet $18,"numerieke variabele-naam"
-    !pet $15,"numerieke uitdrukking"
-    !pet $12,"string-uitdrukking"
-    !pet $06,$C6," of ",$60
-    !pet $06,$61," of ",$CA
-    !pet $06,$C6," of ",$C7
-    !pet $06,$CB," of ",$CD
-    !pet $04,"mode"
-    !pet $09,"konstante"
-    !pet $0B,"regelnummer"
-    !pet $11,"binaire konstante"
-    !pet $05,"label"
-
-    !by $05,$71,$2F,$72,$2F,$75
-    !by $01,$75
-    !by $01,$76
-    !by $01,$F0
-    !by $01,$F5
-    !by $01,$B0
-    !by $01,$77
-    !by $05,$B2,$2F,$93,$2F,$74
-    !by $05,$B2,$2F,$93,$2F,$74
-    !by $01,$74
-
-    !pet $0E," niet verwacht"
-    !pet $0A," ontbreekt"
-    !pet $10," verwacht, geen "
-    !pet $0E,"real-konstante"
-    !pet $11,"integer-konstante"
-    !pet $10,"string-konstante"
-    !pet $04,"naam"
-    !pet $0C,"integer-naam"
-    !pet $0B,"string-naam"
-    !pet $26," niet toegestaan in controle-structuur"
-    !pet $08," zonder "
-
-    !by $01,$F4
-    !by $01,$B2 
-
-    !pet $1C,$E2," alleen in closed proc/func"
-    !pet $12,"verkeerd type van "
-    !pet $12,"verkeerde naam in "
-    !pet $06,$68," of ",$CE
-    !pet $0D,"hex-konstante"
-    !pet $09,"foutief ",$80
-    !pet $1C,"statement/procedure onbekend"
-    !pet $0E,"geen procedure"
-    !pet $16,"variabele bestaat niet"
-    !pet $0D,"verkeerd type"
-    !pet $14,"onjuist functie-type"
-    !pet $15,"geen array of functie"
-    !pet $19,"geen eenvoudige variabele"
-    !pet $1D,"array cq functie bestaat niet"
-    !pet $12,"foutief array-type"
-    !pet $0B,"import-fout"
-    !pet $10,"onbekend package"
+mg1    !by mg2-*-1
+    !by 249
+mg2    !by mg3-*-1
+    !by 250
+;
+mg3    !by mg4-*-1
+    !pet 97," of ",95
+mg4    !by mg5-*-1
+    !pet "label onbekend"
+mg5    !by mg6-*-1
+    !pet "naam reeds gedefinieerd"
+mg6    !by mg7-*-1
+    !pet "geen label"
+mg7    !by mg8-*-1
+    !pet "string niet gedimensioneerd"
+mg8    !by mg9-*-1
+    !pet "geen package"
+mg9    !by mg10-*-1
+    !pet "uitdrukking"
+mg10    !by mg11-*-1
+    !pet "variabele"
+mg11    !by mg12-*-1
+    !pet "operand"
+mg12    !by mg13-*-1
+    !pet "variabele-naam"
+mg13    !by mg14-*-1
+    !pet "numerieke variabele-naam"
+mg14    !by mg15-*-1
+    !pet "numerieke uitdrukking"
+mg15    !by mg16-*-1
+    !pet "string-uitdrukking"
+mg16    !by mg17-*-1
+    !pet 198," of ",96
+mg17    !by mg18-*-1
+    !pet 97," of ",202
+mg18    !by mg19-*-1
+    !pet 198," of ",199
+mg19    !by mg20-*-1
+    !pet 203," of ",205
+mg20    !by mg21-*-1
+    !pet "mode"
+mg21    !by mg22-*-1
+    !pet "konstante"
+mg22    !by mg23-*-1
+    !pet "regelnummer"
+mg23    !by mg24-*-1
+    !pet "binaire konstante"
+mg24    !by mg25-*-1
+    !pet "label"
+mg25    !by mg26-*-1
+    !pet 113,"/",114,"/",117
+mg26    !by mg27-*-1
+    !by 117
+mg27    !by mg28-*-1
+    !by 118
+mg28    !by mg29-*-1
+    !by 240
+mg29    !by mg30-*-1
+    !by 245
+mg30    !by mg31-*-1
+    !by 176
+mg31    !by mg32-*-1
+    !by 119
+mg32    !by mg33-*-1
+    !pet 178,"/",147,"/",116
+mg33    !by mg34-*-1
+    !pet 178,"/",147,"/",116
+mg34    !by mg35-*-1
+    !by 116
+mg35    !by mg36-*-1
+    !pet " niet verwacht"
+mg36    !by mg37-*-1
+    !pet " ontbreekt"
+mg37    !by mg38-*-1
+    !pet " verwacht, geen "
+mg38    !by mg39-*-1
+    !pet "real-konstante"
+mg39    !by mg40-*-1
+    !pet "integer-konstante"
+mg40    !by mg41-*-1
+    !pet "string-konstante"
+mg41    !by mg42-*-1
+    !pet "naam"
+mg42    !by mg43-*-1
+    !pet "integer-naam"
+mg43    !by mg44-*-1
+    !pet "string-naam"
+mg44    !by mg45-*-1
+    !pet " niet toegestaan in controle-structuur"
+mg45    !by mg46-*-1
+    !pet " zonder "
+mg46    !by mg47-*-1
+    !by 244
+mg47    !by mg48-*-1
+    !by 178
+mg48    !by mg49-*-1
+    !pet 226," alleen in closed proc/func"
+mg49    !by mg50-*-1
+    !pet "verkeerd type van "
+mg50    !by mg51-*-1
+    !pet "verkeerde naam in "
+mg51    !by mg52-*-1
+    !pet 104," of ",206
+mg52    !by mg53-*-1
+    !pet "hex-konstante"
+mg53    !by mg54-*-1
+    !pet "foutief ",128
+mg54    !by mg55-*-1
+    !pet "statement/procedure onbekend"
+mg55    !by mg56-*-1
+    !pet "geen procedure"
+mg56    !by mg57-*-1
+    !pet "variabele bestaat niet"
+mg57    !by mg58-*-1
+    !pet "verkeerd type"
+mg58    !by mg59-*-1
+    !pet "onjuist functie-type"
+mg59    !by mg60-*-1
+    !pet "geen array of functie"
+mg60    !by mg61-*-1
+    !pet "geen eenvoudige variabele"
+mg61    !by mg62-*-1
+    !pet "array cq functie bestaat niet"
+mg62    !by mg63-*-1
+    !pet "foutief array-type"
+mg63    !by mg64-*-1
+    !pet "import-fout"
+mg64    !by mg65-*-1
+    !pet "onbekend package"
+mg65
+;
 END
