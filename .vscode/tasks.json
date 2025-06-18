@@ -124,16 +124,136 @@
             }
         },
         {
+            "label": "build -> deutsch",
+            "type": "shell",
+            "osx": {
+                "command": "python3 ./make_package.py src/deutsch.asm",
+            },
+            "windows": {
+                "command": "python3 ./make_package.py src/deutsch.asm"
+            },
+            "linux": {
+                "command": "python3 ./make_package.py src/deutsch.asm"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "clear": true
+            },
+            "problemMatcher": {
+                "owner": "acme",
+                "fileLocation": ["relative", "${workspaceFolder}"],
+                "pattern": {
+                    "regexp": "^(Error - File\\s+(.*), line (\\d+) (\\(Zone .*\\))?:\\s+(.*))$",
+                    "file": 2,
+                    "location": 3,
+                    "message": 1
+                }
+            }
+        },
+        {
+            "label": "build -> dutch",
+            "type": "shell",
+            "osx": {
+                "command": "python3 ./make_package.py src/dutch.asm",
+            },
+            "windows": {
+                "command": "python3 ./make_package.py src/dutch.asm"
+            },
+            "linux": {
+                "command": "python3 ./make_package.py src/dutch.asm"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "clear": true
+            },
+            "problemMatcher": {
+                "owner": "acme",
+                "fileLocation": ["relative", "${workspaceFolder}"],
+                "pattern": {
+                    "regexp": "^(Error - File\\s+(.*), line (\\d+) (\\(Zone .*\\))?:\\s+(.*))$",
+                    "file": 2,
+                    "location": 3,
+                    "message": 1
+                }
+            }
+        },
+        {
+            "label": "build -> errorpack",
+            "type": "shell",
+            "osx": {
+                "command": "python3 ./make_package.py src/errorpack.asm",
+            },
+            "windows": {
+                "command": "python3 ./make_package.py src/errorpack.asm"
+            },
+            "linux": {
+                "command": "python3 ./make_package.py src/errorpack.asm"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "clear": true
+            },
+            "problemMatcher": {
+                "owner": "acme",
+                "fileLocation": ["relative", "${workspaceFolder}"],
+                "pattern": {
+                    "regexp": "^(Error - File\\s+(.*), line (\\d+) (\\(Zone .*\\))?:\\s+(.*))$",
+                    "file": 2,
+                    "location": 3,
+                    "message": 1
+                }
+            }
+        },
+        {
             "label": "build -> exeq",
             "type": "shell",
             "osx": {
                 "command": "python3 ./make_package.py src/exeq.asm",
             },
             "windows": {
-                "command": "python3 ./make_package.py  src/exeq.asm"
+                "command": "python3 ./make_package.py src/exeq.asm"
             },
             "linux": {
-                "command": "python3 ./make_package.py  src/exeq.asm"
+                "command": "python3 ./make_package.py src/exeq.asm"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "clear": true
+            },
+            "problemMatcher": {
+                "owner": "acme",
+                "fileLocation": ["relative", "${workspaceFolder}"],
+                "pattern": {
+                    "regexp": "^(Error - File\\s+(.*), line (\\d+) (\\(Zone .*\\))?:\\s+(.*))$",
+                    "file": 2,
+                    "location": 3,
+                    "message": 1
+                }
+            }
+        },
+        {
+            "label": "build -> francais",
+            "type": "shell",
+            "osx": {
+                "command": "python3 ./make_package.py src/francais.asm",
+            },
+            "windows": {
+                "command": "python3 ./make_package.py src/francais.asm"
+            },
+            "linux": {
+                "command": "python3 ./make_package.py src/francais.asm"
             },
             "group": {
                 "kind": "build",
