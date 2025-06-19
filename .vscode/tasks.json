@@ -34,6 +34,96 @@
             }
         },
         {
+            "label": "build -> basic",
+            "type": "shell",
+            "osx": {
+                "command": "python3 ./make_package.py src/basic.asm",
+            },
+            "windows": {
+                "command": "python3 ./make_package.py src/basic.asm"
+            },
+            "linux": {
+                "command": "python3 ./make_package.py src/basic.asm"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "clear": true
+            },
+            "problemMatcher": {
+                "owner": "acme",
+                "fileLocation": ["relative", "${workspaceFolder}"],
+                "pattern": {
+                    "regexp": "^(Error - File\\s+(.*), line (\\d+) (\\(Zone .*\\))?:\\s+(.*))$",
+                    "file": 2,
+                    "location": 3,
+                    "message": 1
+                }
+            }
+        },
+        {
+            "label": "build -> basic1",
+            "type": "shell",
+            "osx": {
+                "command": "python3 ./make_package.py src/basic1.asm",
+            },
+            "windows": {
+                "command": "python3 ./make_package.py src/basic1.asm"
+            },
+            "linux": {
+                "command": "python3 ./make_package.py src/basic1.asm"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "clear": true
+            },
+            "problemMatcher": {
+                "owner": "acme",
+                "fileLocation": ["relative", "${workspaceFolder}"],
+                "pattern": {
+                    "regexp": "^(Error - File\\s+(.*), line (\\d+) (\\(Zone .*\\))?:\\s+(.*))$",
+                    "file": 2,
+                    "location": 3,
+                    "message": 1
+                }
+            }
+        },
+        {
+            "label": "build -> basic2",
+            "type": "shell",
+            "osx": {
+                "command": "python3 ./make_package.py src/basic2.asm",
+            },
+            "windows": {
+                "command": "python3 ./make_package.py src/basic2.asm"
+            },
+            "linux": {
+                "command": "python3 ./make_package.py src/basic2.asm"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "clear": true
+            },
+            "problemMatcher": {
+                "owner": "acme",
+                "fileLocation": ["relative", "${workspaceFolder}"],
+                "pattern": {
+                    "regexp": "^(Error - File\\s+(.*), line (\\d+) (\\(Zone .*\\))?:\\s+(.*))$",
+                    "file": 2,
+                    "location": 3,
+                    "message": 1
+                }
+            }
+        },
+        {
             "label": "build -> bitmap",
             "type": "shell",
             "osx": {
@@ -224,6 +314,36 @@
             },
             "linux": {
                 "command": "python3 ./make_package.py src/exeq.asm"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "clear": true
+            },
+            "problemMatcher": {
+                "owner": "acme",
+                "fileLocation": ["relative", "${workspaceFolder}"],
+                "pattern": {
+                    "regexp": "^(Error - File\\s+(.*), line (\\d+) (\\(Zone .*\\))?:\\s+(.*))$",
+                    "file": 2,
+                    "location": 3,
+                    "message": 1
+                }
+            }
+        },
+        {
+            "label": "build -> first_last",
+            "type": "shell",
+            "osx": {
+                "command": "python3 ./make_package.py src/first_last.asm",
+            },
+            "windows": {
+                "command": "python3 ./make_package.py src/first_last.asm"
+            },
+            "linux": {
+                "command": "python3 ./make_package.py src/first_last.asm"
             },
             "group": {
                 "kind": "build",
@@ -464,6 +584,36 @@
             },
             "linux": {
                 "command": "python3 ./make_package.py src/screenhelp.asm"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "clear": true
+            },
+            "problemMatcher": {
+                "owner": "acme",
+                "fileLocation": ["relative", "${workspaceFolder}"],
+                "pattern": {
+                    "regexp": "^(Error - File\\s+(.*), line (\\d+) (\\(Zone .*\\))?:\\s+(.*))$",
+                    "file": 2,
+                    "location": 3,
+                    "message": 1
+                }
+            }
+        },
+        {
+            "label": "build -> text",
+            "type": "shell",
+            "osx": {
+                "command": "python3 ./make_package.py src/text.asm",
+            },
+            "windows": {
+                "command": "python3 ./make_package.py src/text.asm"
+            },
+            "linux": {
+                "command": "python3 ./make_package.py src/text.asm"
             },
             "group": {
                 "kind": "build",
